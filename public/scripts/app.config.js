@@ -3,6 +3,9 @@ angular.module('dndApp').config(function($routeProvider, $locationProvider) {
 
     $routeProvider.when('/home', {
         templateUrl: 'views/home.html',
+    }).when('/select', {
+        templateUrl: 'views/select.html',
+        controller: 'SelectController as select'
     }).when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterController as register'
