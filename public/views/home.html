@@ -6,12 +6,12 @@
         <label for="characterName">Character Name</label>
     </div>
 
-    <div class="col-xs-3 col-md-3">
+    <div class="col-xs-3 col-md-3 noPaddingR">
         <textarea class="form-control" id="classNLevel" rows="1"></textarea>
         <label for="classNLevel">Class and Level</label>
     </div>
 
-    <div class="col-xs-3 col-md-3">
+    <div class="col-xs-3 col-md-3 noPaddingR">
         <textarea class="form-control" id="characterBackground" rows="1"></textarea>
         <label for="characterBackground">Background</label>
     </div>
@@ -21,198 +21,165 @@
         <label for="playerName">Player Name</label>
     </div>
 
-    <div class="col-xs-3 col-md-3">
-        <textarea class="form-control" id="characterRace" rows="1"></textarea>
-        <label for="characterRace">Race</label>
+    <div class="col-xs-3 col-md-3 noPaddingR">
+        <!-- <textarea class="form-control" id="characterRace" rows="1"></textarea>
+        <label for="characterRace">Race</label> -->
+        <button class="btn btn-secondary btn-sm dropdown-toggle col-xs-12 col-md-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Race</button>
 
-        <!-- <select id="selectRace" name="race">
-        <option label="charRace">Race</option>
-        </select> -->
+
     </div>
 
-    <div class="col-xs-3 col-md-3">
-        <textarea class="form-control" id="characterAlignment" rows="1"></textarea>
-        <label for="characterAlignment">Alignment</label>
+    <div class="col-xs-3 col-md-3 noPaddingR">
+
+        <button class="btn btn-secondary btn-sm dropdown-toggle col-xs-12 col-md-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Alignment</button>
 
         <!-- <select id="selectAlignment" name="alignment">
         <option label="charAlign">Alignment</option>
         </select> -->
     </div>
 
-    <div class="col-xs-2 col-md-2">
+    <div class="col-xs-2 col-md-2 ">
         <textarea class="form-control" id="characterExp" rows="1"></textarea>
         <label for="characterExp">Experience Points</label>
     </div>
 </div>
 
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterStr" rows="3"></textarea>
-    <label for="characterStr">Strength</label>
-</div>
-<div class="col-xs-2 col-md-2">
-    <textarea class="form-control" id="characterInsp" rows="1"></textarea>
-    <label for="characterInsp">Inspiration</label>
-</div>
+<div id="leftSide" class="col-xs-4 col-md-4">
+
+    <div id="attributes" class="col-xs-4 col-md-4 noPaddingL">
+
+        <textarea class="form-control" id="characterStr" rows="3"></textarea>
+        <label for="characterStr">Strength</label>
+
+        <textarea class="form-control" id="characterDex" rows="3"></textarea>
+        <label for="characterDex">Dexterity</label>
+
+        <textarea class="form-control" id="characterConst" rows="3"></textarea>
+        <label for="characterConst">Constitution</label>
+
+        <textarea class="form-control" id="characterInt" rows="3"></textarea>
+        <label for="characterInt">Intelligence</label>
+
+        <textarea class="form-control" id="characterWis" rows="3"></textarea>
+        <label for="characterWis">Wisdom</label>
+
+        <textarea class="form-control" id="characterChar" rows="3"></textarea>
+        <label for="characterChar">Charisma</label>
+
+    </div><!-- End of attributes section !-->
 
 
-<div id="hpAndArmor" class="col-xs-5 col-md-5">
+    <div id="skills" class="col-xs-8 col-md-8 noPadding">
 
-    <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" id="characterArmor" rows="2"></textarea>
-        <label for="characterArmor">Armor Class</label>
+        <textarea class="form-control" id="characterInsp" rows="1"></textarea>
+        <label for="characterInsp">Inspiration</label>
+
+        <textarea class="form-control" id="characterProfBonus" rows="1"></textarea>
+        <label for="characterProfBonus">Proficiency Bonus</label>
+
+        <textarea class="form-control" id="characterSavingThrows" rows="5"></textarea>
+        <label for="characterSavingThrows">Saving Throws</label>
+
+        <textarea class="form-control" id="characterSkills" rows="15"></textarea>
+        <label for="characterSkills">Skills</label>
+
+    </div> <!-- end of skills !-->
+
+
+
+    <div class="col-xs-12 col-md-12 noPadding">
+        <textarea class="form-control" id="characterPercep" rows="1"></textarea>
+        <label for="characterPercep">Passive Wisdom (Perception)</label>
     </div>
 
-    <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" id="characterInit" rows="2"></textarea>
-        <label for="characterInit">Initiative</label>
+    <div class="col-xs-12 col-md-12 noPadding">
+        <textarea class="form-control" id="characterLanguages" rows="10"></textarea>
+        <label for="characterLanguages">Other Proficiences and Languages</label>
+    </div>
+</div> <!-- end of left column !-->
+
+
+
+
+
+<div id="theMiddle" class="col-xs-4 col-md-4">
+        <div id="hpAndArmor">
+
+        <div class="col-xs-4 col-s-4 col-md-4 noPaddingL">
+            <textarea class="form-control" id="characterArmor" rows="2"></textarea>
+            <label for="characterArmor">Armor Class</label>
+        </div>
+
+        <div class="col-xs-4 col-s-4 col-md-4 noPadding">
+            <textarea class="form-control" id="characterInit" rows="2"></textarea>
+            <label for="characterInit">Initiative</label>
+        </div>
+
+        <div class="col-xs-4 col-md-4 noPaddingR">
+            <textarea class="form-control" id="characterSpeed" rows="2"></textarea>
+            <label for="characterSpeed">Speed</label>
+        </div>
+
+        <div class="noPadding">
+            <textarea class="form-control" id="characterCurrHp" rows="3"></textarea>
+            <label for="characterCurrHp">Current HP</label>
+        </div>
+
+        <div class="noPadding">
+            <textarea class="form-control" id="characterTempHp" rows="3"></textarea>
+            <label for="characterTempHp">Temporary HP</label>
+        </div>
+
+        <div class="col-xs-6 col-md-6 noPaddingL">
+            <textarea class="form-control" id="characterHitDice" rows="2"></textarea>
+            <label for="characterHitDice">Hit Dice</label>
+        </div>
+
+        <div class="col-xs-6 col-md-6 noPaddingR">
+            <textarea class="form-control" id="characterDeathSaves" rows="2"></textarea>
+            <label for="characterDeathSaves">Death Saves</label>
+        </div>
     </div>
 
-    <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" id="characterSpeed" rows="2"></textarea>
-        <label for="characterSpeed">Speed</label>
+
+        <div class="noPadding">
+            <textarea class="form-control" id="characterAttacksAndSpells" rows="10"></textarea>
+            <label for="characterAttacksAndSpells">Attacks And Spellcasting</label>
+        </div>
+
+        <div class="noPadding">
+            <textarea class="form-control" id="characterEquipment" rows="13"></textarea>
+            <label for="characterEquipment">Equipment</label>
+        </div>
+</div><!-- End of the large middle area. !-->
+
+<div id="rightSide" class="col-xs-4 col-md-4">
+
+    <div id="personalityAndInfo">
+        <div>
+            <textarea class="form-control" id="characterPers" rows="3"></textarea>
+            <label for="characterPers">Personality Traits</label>
+        </div>
+        <div>
+            <textarea class="form-control" id="characterIdeals" rows="2"></textarea>
+            <label for="characterIdeals">Ideals</label>
+        </div>
+        <div>
+            <textarea class="form-control" id="characterBonds" rows="2"></textarea>
+            <label for="characterBonds">Bonds</label>
+        </div>
+        <div>
+            <textarea class="form-control" id="characterFlaws" rows="3"></textarea>
+            <label for="characterFlaws">Flaws</label>
+        </div>
     </div>
-
-    <div class="col-xs-12 col-md-12">
-        <textarea class="form-control" id="characterCurrHp" rows="3"></textarea>
-        <label for="characterCurrHp">Current HP</label>
+    <div>
+        <textarea class="form-control" id="characterFeaturesTraits" rows="25"></textarea>
+        <label for="characterFeaturesTraits">Features And Traits</label>
     </div>
-
-    <div class="col-xs-12 col-md-12">
-        <textarea class="form-control" id="characterTempHp" rows="3"></textarea>
-        <label for="characterTempHp">Temporary HP</label>
-    </div>
-
-    <div class="col-xs-6 col-md-6">
-        <textarea class="form-control" id="characterHitDice" rows="2"></textarea>
-        <label for="characterHitDice">Hit Dice</label>
-    </div>
-
-    <div class="col-xs-6 col-md-6">
-        <textarea class="form-control" id="characterDeathSaves" rows="2"></textarea>
-        <label for="characterDeaethSaves">Death Saves</label>
-    </div>
-
-</div>
+</div><!-- End of the right side !-->
 
 
-
-
-
-
-
-
-<div class="col-xs-4 col-md-4">
-    <textarea class="form-control" id="characterStr" rows="15"></textarea>
-</div>
-
-
-
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterDex" rows="1"></textarea>
-    <label for="characterDex">Dexterity</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterConst" rows="1"></textarea>
-    <label for="characterConst">Constitution</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterInt" rows="1"></textarea>
-    <label for="characterInt">Intelligence</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterWis" rows="1"></textarea>
-    <label for="characterWis">Wisdom</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="characterChar" rows="1"></textarea>
-    <label for="characterChar">Charisma</label>
-</div>
-
-
-
-
-
-<div class="col-xs-2 col-md-2">
-    <textarea class="form-control" id="characterProfBonus" rows="1"></textarea>
-    <label for="characterProfBonus">Proficiency Bonus</label>
-</div>
-<div class="col-xs-2 col-md-2">
-    <textarea class="form-control" id="characterSavingThrows" rows="1"></textarea>
-    <label for="characterSavingThrows">Saving Throws</label>
-</div>
-<div class="col-xs-2 col-md-2">
-    <textarea class="form-control" id="characterSkills" rows="15"></textarea>
-    <label for="characterSkills">Skills</label>
-</div>
-<div class="col-xs-2 col-md-2">
-    <textarea class="form-control" id="characterPercep" rows="1"></textarea>
-    <label for="characterPercep">Passive Wisdom (Perception)</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
-</div>
-<div class="col-xs-1 col-md-1">
-    <textarea class="form-control" id="character" rows="1"></textarea>
-    <label for="character">Text</label>
+<div class="col-xs-offset-5 col-xs-10">
+  <button type="submit" class="btn btn-primary" >Submit Character</button>
 </div>
