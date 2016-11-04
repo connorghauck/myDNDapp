@@ -37,26 +37,18 @@
         <!-- <textarea class="form-control" ng-model="sheet.character.characterRace" rows="1"></textarea>
         <label for="characterRace">Race</label> -->
         <!-- <button class="btn btn-secondary btn-sm dropdown-toggle col-xs-12 col-md-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Race</button> -->
-        <select id="characterRace" class="selectpicker col-xs-12 col-md-12">
-            <option>Select Race</option>
-        </select>
-        <label for="characterRace">Character Race</label>
 
+        <select class="col-xs-12 col-md-12" ng-model="sheet.character.characterRace" ng-options="race as race.race for race in sheet.races">Select Race</select>
+        <label for="characterRace">Character Race</label>
 
 
     </div>
 
     <div class="col-xs-3 col-md-3 noPaddingR">
 
-        <!-- <button class="btn btn-secondary btn-sm dropdown-toggle col-xs-12 col-md-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Alignment</button> -->
-        <select ng-model="sheet.character.charAlign" id="selectAlignment" class="selectpicker col-xs-12 col-md-12">
-            <option ng-value="sheet.character.charAlign">{{sheet.character.charAlign}}</option>
-        </select>
+        <select class="col-xs-12 col-md-12" ng-model="sheet.character.charAlign" ng-options="alignment as alignment.alignment for alignment in sheet.alignments"></select>
         <label for="charAlign">Character Alignment</label>
 
-        <!-- <select id="selectAlignment" name="alignment">
-        <option label="charAlign">Alignment</option>
-        </select> -->
     </div>
 
     <div class="col-xs-2 col-md-2 ">
