@@ -5,9 +5,10 @@
 
 <h1>Character Select</h1>
 
-<select class="col-xs-2 col-md-2 col-md-offset-5"id="selectCharacter">
-<option label="Create New Character"></option>
-<option label="Placeholder Character"></option>
-</select>
+
+
+
+<select class="col-xs-2 col-md-2 col-md-offset-5" ng-model="sheet.character.charAlign" ng-options="alignment as alignment.alignment for alignment in sheet.alignments"></select>
+
 
 <button type="submit">Select</button>

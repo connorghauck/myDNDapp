@@ -11,3 +11,9 @@ I've added many form/text inputs to what's going to be the character sheet page.
 Some bootstrap work has been done to change the layout, but I plan on changing the form text before finishing the bootstrap layout.
 
 Over the next few days, I'll be finishing up the layout of the Character Sheet page and the layout of the Character Select/Home page.
+
+Day 7 Morning Overdue Update:
+
+The Character database is now being properly filled out when the Character Sheet is submitted in sheet.html.
+
+I still need to create a working drop down menu in the Home page so the User may update an already created character. I'll need to create a new HTML page for that which will basically be the same as the sheet.html, but with some values input into the form/textarea fields.
