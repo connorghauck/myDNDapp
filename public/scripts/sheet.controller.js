@@ -15,6 +15,11 @@ function SheetController($http, $location) {
         ctrl.races = response.data;
     });
 
+    $http.get('/charclass').then(function(response){
+        console.log('getting classes', response);
+        ctrl.classes = response.data;
+    });
+
     ctrl.sheet = function() {
         console.log('logging in');
         $http.post('/charactersheet', ctrl.character

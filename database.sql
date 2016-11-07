@@ -69,4 +69,4 @@ ALTER TABLE characters
 ADD alignment int REFERENCES alignments
 
 ALTER TABLE characters
-ADD class int REFERENCES classes
+ADD charclass int REFERENCES classes

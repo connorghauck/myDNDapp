@@ -1,6 +1,6 @@
 <nav>
-    <a href="/home">home</a>
-    <a href="/sheet">sheet</a>
+    <a href="/home">HOME</a>
+    <a href="/sheet">CREATE</a>
 </nav>
 
 <h1>Character Sheet</h1>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="col-xs-2 col-md-2 noPaddingR">
-        <textarea class="form-control" ng-model="sheet.character.characterClass" rows="1"></textarea>
+        <select class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterClass" ng-options="charclass as charclass.class for charclass in sheet.classes"></select>
         <label for="characterClass">Class</label>
     </div>
 
@@ -93,11 +93,30 @@
         <textarea class="form-control" ng-model="sheet.character.characterSavingThrows" rows="5"></textarea>
         <label for="characterSavingThrows">Saving Throws</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterSkills" rows="15"></textarea>
-
-        <div id="skills">
+        <div id="skills" class="form-control noPadding" rows="18">
             <label for="characterSkills">Skills</label>
+
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
+        <select class="form-control" ng-model="sheet.character.characterSkills" rows="1"></select>
         </div>
+
+
 
     </div> <!-- end of skills !-->
 
@@ -122,17 +141,17 @@
         <div id="hpAndArmor">
 
         <div class="col-xs-4 col-s-4 col-md-4 noPaddingL">
-            <textarea class="form-control" ng-model="sheet.character.characterArmor" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterArmor" rows="3"></textarea>
             <label for="characterArmor">Armor Class</label>
         </div>
 
         <div class="col-xs-4 col-s-4 col-md-4 noPadding">
-            <textarea class="form-control" ng-model="sheet.character.characterInit" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterInit" rows="3"></textarea>
             <label for="characterInit">Initiative</label>
         </div>
 
         <div class="col-xs-4 col-s-4 col-md-4 noPaddingR">
-            <textarea class="form-control" ng-model="sheet.character.characterSpeed" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterSpeed" rows="3"></textarea>
             <label for="characterSpeed">Speed</label>
         </div>
 
@@ -147,12 +166,12 @@
         </div>
 
         <div class="col-xs-6 col-md-6 noPaddingL">
-            <textarea class="form-control" ng-model="sheet.character.characterHitDice" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterHitDice" rows="3"></textarea>
             <label for="characterHitDice">Hit Dice</label>
         </div>
 
         <div class="col-xs-6 col-md-6 noPaddingR">
-            <textarea class="form-control" ng-model="sheet.character.characterDeathSaves" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterDeathSaves" rows="3"></textarea>
             <label for="characterDeathSaves">Death Saves</label>
         </div>
     </div>
@@ -164,7 +183,7 @@
         </div>
 
         <div class="noPadding">
-            <textarea class="form-control" ng-model="sheet.character.characterEquipment" rows="13"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterEquipment" rows="14"></textarea>
             <label for="characterEquipment">Equipment</label>
         </div>
 </div><!-- End of the large middle area. !-->
@@ -177,11 +196,11 @@
             <label for="characterPers">Personality Traits</label>
         </div>
         <div>
-            <textarea class="form-control" ng-model="sheet.character.characterIdeals" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterIdeals" rows="3"></textarea>
             <label for="characterIdeals">Ideals</label>
         </div>
         <div>
-            <textarea class="form-control" ng-model="sheet.character.characterBonds" rows="2"></textarea>
+            <textarea class="form-control" ng-model="sheet.character.characterBonds" rows="3"></textarea>
             <label for="characterBonds">Bonds</label>
         </div>
         <div>
@@ -190,7 +209,7 @@
         </div>
     </div>
     <div>
-        <textarea class="form-control" ng-model="sheet.character.characterFeaturesTraits" rows="25"></textarea>
+        <textarea class="form-control" ng-model="sheet.character.characterFeaturesTraits" rows="26"></textarea>
         <label for="characterFeaturesTraits">Features And Traits</label>
     </div>
 </div><!-- End of the right side !-->

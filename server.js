@@ -5,6 +5,7 @@ const login = require('./routes/login');
 const register = require('./routes/register');
 const charactersheet = require('./routes/charactersheet');
 const alignments = require('./routes/alignments');
+const classes = require('./routes/charclass');
 const races = require('./routes/races');
 const auth = require('./auth/setup');
 const passport = require('passport');
@@ -40,6 +41,7 @@ app.use('/register', register);
 app.use('/charactersheet', charactersheet);
 app.use('/alignments', alignments);
 app.use('/races', races);
+app.use('/charclass', classes);
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'public/views/index.html'));
