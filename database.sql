@@ -70,3 +70,23 @@ ADD alignment int REFERENCES alignments
 
 ALTER TABLE characters
 ADD charclass int REFERENCES classes
+
+ALTER TABLE characters
+ADD acrobaticsskill int,
+ADD animalhandlingskill int,
+ADD arcanaskill int,
+ADD athleticsskill int,
+ADD deceptionskill int,
+ADD historyskill int,
+ADD insightskill int,
+ADD intimidationskill int,
+ADD investigationskill int,
+ADD medicineskill int,
+ADD natureskill int,
+ADD perceptionskill int,
+ADD performanceskill int,
+ADD persuasionskill int,
+ADD religionskill int,
+ADD sleightofhandskill int,
+ADD stealthskill int,
+ADD survivalskill int

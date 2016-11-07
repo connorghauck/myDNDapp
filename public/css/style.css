@@ -13,3 +13,8 @@ h1 {
 .noPadding {
     padding: 0px;
 }
+
+
+#charSkills {
+    height: 22px;
+}
