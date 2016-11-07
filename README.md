@@ -12,8 +12,25 @@ Some bootstrap work has been done to change the layout, but I plan on changing t
 
 Over the next few days, I'll be finishing up the layout of the Character Sheet page and the layout of the Character Select/Home page.
 
+
+
 Day 7 Morning Overdue Update:
 
 The Character database is now being properly filled out when the Character Sheet is submitted in sheet.html.
 
 I still need to create a working drop down menu in the Home page so the User may update an already created character. I'll need to create a new HTML page for that which will basically be the same as the sheet.html, but with some values input into the form/textarea fields.
+
+
+
+Day 7 Update:
+
+I will also be completing the Home page and the update pages shortly. These will just require taking in the user id and putting links to their characters in a dropdown menu on the home page so the user may select which character they wish to update/alter.
+
+The skills table is currently being made. Character sheet is initially complete apart from this last section, then onto CSS/Bootstrap for the sheet.html.
+
+To do:
+1. Finish the skills dropdown and database additions.
+2. Create the update/alter page.
+3. Link the update/alter pages to the Home page dropdown menu.
+4. CSS the entire thing to make it look cleaner.
+5. Add logout button.
