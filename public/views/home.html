@@ -5,9 +5,17 @@
 
 <h1>Character Select</h1>
 
+    <select class="col-xs-2 col-md-2 col-md-offset-5" ng-model="home.characters">
+    <option ng-repeat="character in home.character">{{character}}</option>
+</select>
+    <div class="col-xs-2 col-md-2 col-md-offset-5 col-xs-offset-5">
+        <button class="col-xs-6 col-md-6 col-md-offset-3 col-xs-offset-3" type="submit">Select</button>
+    </div>
 
+<!-- <select class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterRace" ng-options="race as race.race for race in sheet.races">Select Race</select>
+<label for="characterRace">Character Race</label>
 
-
-<select class="col-xs-2 col-md-2 col-md-offset-5" ng-model="sheet.character.charAlign" ng-options="alignment as alignment.alignment for alignment in sheet.alignments"></select>
-
-<button type="submit">Select</button>
+<div class="col-xs-2 col-md-2 noPaddingR">
+    <select class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterClass" ng-options="charclass as charclass.class for charclass in sheet.classes"></select>
+    <label for="characterClass">Class</label>
+</div> -->

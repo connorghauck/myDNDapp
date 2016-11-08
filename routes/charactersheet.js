@@ -10,7 +10,8 @@ router.post('/', function(req, res) {
         req.body.characterInit, req.body.characterSpeed, req.body.characterCurrHp, req.body.characterTempHp,
         req.body.characterHitDice, req.body.characterDeathSaves,
         req.body.characterAttacksAndSpells, req.body.characterEquipment, req.body.characterPers, req.body.characterIdeals,
-        req.body.characterBonds, req.body.characterFlaws, req.body.characterFeaturesTraits).then(function() {
+        req.body.characterBonds, req.body.characterFlaws, req.body.characterFeaturesTraits, req.body.characterSkillsAcrobatics, req.body.characterSkillsAnimalHandling, req.body.characterSkillsArcana, req.body.characterSkillsAthletics, req.body.characterSkillsDeception, req.body.characterSkillsHistory, req.body.characterSkillsInsight, req.body.characterSkillsIntimidation, req.body.characterSkillsInvestigation, req.body.characterSkillsMedicine, req.body.characterSkillsNature,
+        req.body.characterSkillsPerception, req.body.characterSkillsPerformance, req.body.characterSkillsPersuasion, req.body.characterSkillsReligion, req.body.characterSkillsSleightOfHand, req.body.characterSkillsStealth, req.body.characterSkillsSurvival).then(function() {
         res.sendStatus(201);
     }).catch(function(err){
         console.log('Error in /sheet', err);
