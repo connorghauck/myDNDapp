@@ -6,7 +6,7 @@ function SheetController($http, $location) {
     var ctrl = this;
 
     $http.get('/alignments').then(function(response){
-        console.log('hello', response);
+        console.log('getting alignments', response);
         ctrl.alignments = response.data;
     });
 

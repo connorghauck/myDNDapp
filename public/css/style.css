@@ -16,5 +16,13 @@ h1 {
 
 
 #charSkills {
-    height: 22px;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.theSkillLabels {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
 }

@@ -1,15 +1,15 @@
 <nav>
     <a href="/home">HOME</a>
     <a href="/sheet">CREATE</a>
+    <a href="/update">UPDATE</a>
 </nav>
 
 <h1>Character Select</h1>
 
-    <select class="col-xs-2 col-md-2 col-md-offset-5" ng-model="home.characters">
-    <option ng-repeat="character in home.character">{{character}}</option>
-</select>
+    <select class="col-xs-2 col-md-2 col-md-offset-5" ng-model="home.characters" ng-options="character as character.charname for character in home.character">
+    </select>
     <div class="col-xs-2 col-md-2 col-md-offset-5 col-xs-offset-5">
-        <button class="col-xs-6 col-md-6 col-md-offset-3 col-xs-offset-3" type="submit">Select</button>
+        <button ng-click="home.updateSelector()" class="col-xs-6 col-md-6 col-md-offset-3 col-xs-offset-3" type="submit">Select</button>
     </div>
 
 <!-- <select class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterRace" ng-options="race as race.race for race in sheet.races">Select Race</select>
