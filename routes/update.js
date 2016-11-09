@@ -3,9 +3,7 @@ const Update = require('../models/update');
 
 router.put('/:id', function(req, res) {
     console.log('creating new character');
-    console.log(req.body.race);
-    Update.update(req.body.name, req.body.charclass, req.body.level, req.body.background, req.body.race, req.body.alignment, req.body.exp, req.body.strength,
-        req.body.dexterity, req.body.constitution, req.body.intelligence, req.body.wisdom,
+        Update.update(req.body.charname, req.body.charclass, req.body.level, req.body.background, req.body.races, req.body.alignment, req.body.exp, req.body.strength, req.body.dexterity, req.body.constitution, req.body.intelligence, req.body.wisdom,
         req.body.charisma, req.body.inspiration, req.body.proficiency, req.body.savingthrows, req.body.perception, req.body.otherproficiencies, req.body.armor,
         req.body.initiative, req.body.speed, req.body.currenthp, req.body.temphp,
         req.body.hitdice, req.body.deathsaves,

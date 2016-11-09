@@ -10,12 +10,12 @@
 
 <div class="topOfScreen">
     <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" ng-model="update.selectedId.charname" readonly rows="3" placeholder="{{update.selectedId.charname}}"></textarea>
+        <textarea class="form-control" ng-model="update.selectedId.charname" readonly disabled="true" rows="3" placeholder="{{update.selectedId.charname}}"></textarea>
         <label for="characterName">Character Name</label>
     </div>
 
     <div class="col-xs-2 col-md-2 noPaddingR">
-        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.charclass" readonly ng-options="charclass as charclass.class for charclass in sheet.classes"></select>
+        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.charclass" readonly disabled="true" ng-options="charclass.id as charclass.class for charclass in update.classes"></select>
         <label for="characterClass">Class</label>
     </div>
 
@@ -25,29 +25,26 @@
     </div>
 
     <div class="col-xs-3 col-md-3 noPaddingR">
-        <textarea class="form-control" ng-model="update.selectedId.background" readonly rows="1"></textarea>
+        <textarea class="form-control" ng-model="update.selectedId.background" readonly disabled="true" rows="1"></textarea>
         <label for="characterBackground">Background</label>
     </div>
 
     <div class="col-xs-2 col-md-2">
-        <textarea class="form-control" ng-model="sheet.character.playerName" readonly rows="1"></textarea>
+        <textarea class="form-control" ng-model="update.character.playerName" readonly rows="1"></textarea>
         <label for="playerName">Player Name</label>
     </div>
 
     <div class="col-xs-3 col-md-3 noPaddingR">
-        <!-- <textarea class="form-control" ng-model="update.selectedId.characterRace" rows="1"></textarea>
-        <label for="characterRace">Race</label> -->
-        <!-- <button class="btn btn-secondary btn-sm dropdown-toggle col-xs-12 col-md-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Character Race</button> -->
 
-        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.race" readonly ng-options="race as race.race for race in sheet.races">Select Race</select>
+        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.races" readonly disabled="true" ng-options="race.id as race.race for race in update.races">Select Race</select>
         <label for="characterRace">Character Race</label>
-
 
     </div>
 
     <div class="col-xs-3 col-md-3 noPaddingR">
 
-        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.alignment" ng-options="alignment as alignment.alignment for alignment in sheet.alignments"></select>
+        <!-- <input type="text" class="form-control col-xs-12 col-md-12" ng-model="sheet.character.charAlign" readonly rows="1" /> -->
+        <select class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.alignment" ng-options="alignment.id as alignment.alignment for alignment in update.alignments"></select>
         <label for="charAlign">Character Alignment</label>
 
     </div>
