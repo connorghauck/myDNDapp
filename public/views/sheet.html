@@ -4,11 +4,18 @@
     <a href="/update">UPDATE</a>
 </nav>
 
+
+
 <h1>Character Sheet</h1>
+<hr />
+<div class="dice" rows="1">
+    <h2 id="diceResults">DICE</h2>
+    <button type="button" onclick="diceRoll()">Roll Dice</button>
+</div>
 
 <form class="characterForm" ng-submit="sheet.sheet()">
 
-<div class="topOfScreen">
+<div class="topOfScreen col-xs-12 col-md-12 noPadding">
     <div class="col-xs-4 col-md-4">
         <textarea class="form-control" ng-model="sheet.character.characterName" rows="3"></textarea>
         <label for="characterName">Character Name</label>
