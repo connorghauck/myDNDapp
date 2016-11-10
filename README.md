@@ -34,3 +34,14 @@ To do:
 3. Link the update/alter pages to the Home page dropdown menu.
 4. CSS the entire thing to make it look cleaner.
 5. Add logout button.
+
+
+
+
+Current state of project (Day 10):
+
+Since last readme update, I have created a functioning select and update page/feature. At this point, however, the users are able to see other users characters, which was not the original intent. I might scrap this idea to just have universal characters for everyone.
+
+I had originally planned to have this project be half online, half offline. The Character Sheet was going to be a helper for our character sheets we typically have printed off from other PDFs and this would just add them to a database for us to fetch from at future points. However, the more I'm working with it, the more functionality I want to add to make it a almost completely online project.
+
+A random number generator has been added to simulate a 6 sided dice roll. I plan on next adding modifiers to skills based on attributes.
