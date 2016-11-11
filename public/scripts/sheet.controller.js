@@ -5,6 +5,14 @@ function SheetController($http, $location) {
     console.log('SheetController loaded');
     var ctrl = this;
 
+    ctrl.setSkillBonuses = function(){
+        if (ctrl.character.characterStr > 10){
+            document.getElementById("charSkills1").innerHTML = "1";
+        } else {
+            console.log('didnt work idk');
+        };
+    }
+
     $http.get('/alignments').then(function(response){
         console.log('getting alignments', response);
         ctrl.alignments = response.data;
@@ -19,6 +27,7 @@ function SheetController($http, $location) {
         console.log('getting classes', response);
         ctrl.classes = response.data;
     });
+
 
     ctrl.sheet = function() {
         console.log('logging in');

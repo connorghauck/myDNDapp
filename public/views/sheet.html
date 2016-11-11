@@ -4,20 +4,23 @@
     <a href="/update">UPDATE</a>
 </nav>
 
+<div id="container">
 
 
 <h1>Character Sheet</h1>
 <hr />
 <div class="dice" rows="1">
-    <h2 id="diceResults">DICE</h2>
-    <button type="button" onclick="diceRoll()">Roll Dice</button>
+    <h4 id="diceResults">Dice Roll: 0</h4>
+    <h4 id="diceResultsMultiple">Stat Roll: 0</h4>
+    <button type="button" onclick="diceRoll()">Roll One Dice</button>
+    <button type="button" onclick="statRolls()">Roll Multiple (3)</button>
 </div>
 
 <form class="characterForm" ng-submit="sheet.sheet()">
 
-<div class="topOfScreen col-xs-12 col-md-12 noPadding">
+<div id="topOfScreen" class="topOfScreen col-xs-12 col-md-12 noPadding">
     <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" ng-model="sheet.character.characterName" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterName" rows="1"></textarea>
         <label for="characterName">Character Name</label>
     </div>
 
@@ -61,292 +64,103 @@
 
     <div id="attributes" class="col-xs-4 col-md-4 noPaddingL">
 
-        <textarea class="form-control" ng-model="sheet.character.characterStr" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterStr" rows="1"></textarea>
         <label for="characterStr">Strength</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterDex" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterDex" rows="1"></textarea>
         <label for="characterDex">Dexterity</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterConst" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterConst" rows="1"></textarea>
         <label for="characterConst">Constitution</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterInt" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterInt" rows="1"></textarea>
         <label for="characterInt">Intelligence</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterWis" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterWis" rows="1"></textarea>
         <label for="characterWis">Wisdom</label>
 
-        <textarea class="form-control" ng-model="sheet.character.characterChar" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="sheet.character.characterChar" rows="1"></textarea>
         <label for="characterChar">Charisma</label>
+
+        <button type="button" ng-click="sheet.setSkillBonuses()" rows="3">Check Skill Bonuses</button>
 
     </div><!-- End of attributes section !-->
 
 
     <div class="col-xs-8 col-md-8 noPadding">
 
-        <textarea class="form-control" ng-model="sheet.character.characterInsp" rows="1"></textarea>
+        <input type="text" class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterInsp" rows="1"/>
         <label for="characterInsp">Inspiration</label>
-
-        <textarea class="form-control" ng-model="sheet.character.characterProfBonus" rows="1"></textarea>
+<hr />
+        <input type="text" class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterProfBonus" rows="1"/>
         <label for="characterProfBonus">Proficiency Bonus</label>
-
-        <textarea class="form-control" ng-model="sheet.character.characterSavingThrows" rows="5"></textarea>
+<hr />
+        <textarea class="form-control col-xs-12 col-md-12" ng-model="sheet.character.characterSavingThrows" rows="5"></textarea>
         <label for="characterSavingThrows">Saving Throws</label>
+<hr />
 
-    <div id="skills">
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsAcrobatics">
-                <option value="" disabled selected>Acrobatics</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsAnimalHandling">
-                <option value="" disabled selected>Animal Handling</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsArcana">
-                <option value="" disabled selected>Arcana</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsAthletics">
-                <option value="" disabled selected>Athletics</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsDeception">
-                <option value="" disabled selected>Deception</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsHistory">
-                <option value="" disabled selected>History</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsInsight">
-                <option value="" disabled selected>Insight</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsIntimidation">
-                <option value="" disabled selected>Intimidation</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsInvestigation">
-                <option value="" disabled selected>Investigation</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsMedicine">
-                <option value="" disabled selected>Medicine</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsNature">
-                <option value="" disabled selected>Nature</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsPerception">
-                <option value="" disabled selected>Perception</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsPerformance">
-                <option value="" disabled selected>Performance</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsPersuasion">
-                <option value="" disabled selected>Persuasion</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsReligion">
-                <option value="" disabled selected>Religion</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsSleightOfHand">
-                <option value="" disabled selected>Sleight of Hand</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsStealth">
-                <option value="" disabled selected>Stealth</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-        <select id="charSkills"class="form-control" ng-model="sheet.character.characterSkillsSurvival">
-                <option value="" disabled selected>Survival</option>
-                <option value="-5">-5</option>
-                <option value="-4">-4</option>
-                <option value="-3">-3</option>
-                <option value="-2">-2</option>
-                <option value="-1">-1</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-        </select>
-    </div>
+    <div class="col-xs-6 col-md-6 noPadding" id="skills">
+        <input type="text" id="charSkills1"class="form-control" ng-model="sheet.character.characterSkillsAcrobatics"/>
+        <label class="theSkillLabels" for="characterSkill">Acrobatics (Dex)</label>
+
+        <input type="text" id="charSkills2"class="form-control" ng-model="sheet.character.characterSkillsAnimalHandling"/>
+        <label class="theSkillLabels" for="characterSkill">Animal Handling (Wis)</label>
+
+        <input type="text" id="charSkills3"class="form-control" ng-model="sheet.character.characterSkillsArcana"/>
+        <label class="theSkillLabels" for="characterSkill">Arcana (Int)</label>
+
+        <input type="text" id="charSkills4"class="form-control" ng-model="sheet.character.characterSkillsAthletics"/>
+        <label class="theSkillLabels" for="characterSkill">Athletics (Str)</label>
+
+        <input type="text" id="charSkills5"class="form-control" ng-model="sheet.character.characterSkillsDeception"/>
+        <label class="theSkillLabels" for="characterSkill">Deception (Cha)</label>
+
+        <input type="text" id="charSkills6"class="form-control" ng-model="sheet.character.characterSkillsHistory"/>
+        <label class="theSkillLabels" for="characterSkill">History (Int)</label>
+
+        <input type="text" id="charSkills7"class="form-control" ng-model="sheet.character.characterSkillsInsight"/>
+        <label class="theSkillLabels" for="characterSkill">Insight (Wis)</label>
+
+        <input type="text" id="charSkills8"class="form-control" ng-model="sheet.character.characterSkillsIntimidation"/>
+        <label class="theSkillLabels" for="characterSkill">Intimidation (Cha)</label>
+
+        <input type="text" id="charSkills9"class="form-control" ng-model="sheet.character.characterSkillsInvestigation"/>
+        <label class="theSkillLabels" for="characterSkill">Investigation (Int)</label>
+</div>
+
+
+<div class="col-xs-6 col-md-6 noPadding" id="skills">
+
+        <input type="text" id="charSkills10"class="form-control" ng-model="sheet.character.characterSkillsMedicine"/>
+        <label class="theSkillLabels" for="characterSkill">Medicine (Wis)</label>
+
+        <input type="text" id="charSkills11"class="form-control" ng-model="sheet.character.characterSkillsNature"/>
+        <label class="theSkillLabels" for="characterSkill">Nature (Int)</label>
+
+        <input type="text" id="charSkills12"class="form-control" ng-model="sheet.character.characterSkillsPerception"/>
+        <label class="theSkillLabels" for="characterSkill">Perception (Wis)</label>
+
+        <input type="text" id="charSkills13"class="form-control" ng-model="sheet.character.characterSkillsPerformance"/>
+        <label class="theSkillLabels" for="characterSkill">Performance (Cha)</label>
+
+        <input type="text" id="charSkills14"class="form-control" ng-model="sheet.character.characterSkillsPersuasion"/>
+        <label class="theSkillLabels" for="characterSkill">Persuasion (Cha)</label>
+
+        <input type="text" id="charSkills15"class="form-control" ng-model="sheet.character.characterSkillsReligion"/>
+        <label class="theSkillLabels" for="characterSkill">Religion (Int)</label>
+
+        <input type="text" id="charSkills16"class="form-control" ng-model="sheet.character.characterSkillsSleightOfHand"/>
+        <label class="theSkillLabels" for="characterSkill">Sleight of Hand (Dex)</label>
+
+        <input type="text" id="charSkills17"class="form-control" ng-model="sheet.character.characterSkillsStealth"/>
+        <label class="theSkillLabels" for="characterSkill">Stealth (Dex)</label>
+
+        <input type="text" id="charSkills18"class="form-control" ng-model="sheet.character.characterSkillsSurvival"/>
+        <label class="theSkillLabels" for="characterSkill">Survival (Wis)</label>
+
+</div>
+<hr />
+
 
 
 
@@ -451,3 +265,4 @@
 </div>
 
 </form>
+</div>

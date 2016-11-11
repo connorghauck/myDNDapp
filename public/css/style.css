@@ -17,16 +17,63 @@ h2{
     padding: 0px;
 }
 
+#container {
+
+}
+
+#topOfScreen {
+
+}
+
+#theMiddle {
+
+}
+
+#attributes {
+    text-align-last: center;
+}
+
+#rightSide {
+
+}
+#attributeText {
+    font-size: 44px;
+}
+hr {
+    clear: both;
+    visibility: hidden;
+    padding: 0px;
+    margin: 5px;
+}
+
 #charSkills {
     height: 20px;
     margin: 2px 0px 0px 0px;
-    /*border-radius: 15px;*/
+    border: 1px solid black;
     background-color: #EEEEEE;
-    /*box-shadow: 8px 8px 7.5px rgba(0, 180, 255, 0.5);*/
+    text-align: center;
 }
 
+#charSkills {
+    height: 20px;
+    margin: 2px 0px 0px 0px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+#charSkills1, #charSkills2, #charSkills3, #charSkills4, #charSkills5, #charSkills6, #charSkills7, #charSkills8, #charSkills9, #charSkills10, #charSkills11, #charSkills12, #charSkills13, #charSkills14, #charSkills15, #charSkills16, #charSkills17, #charSkills18 {
+    height: 20px;
+    margin: 2px 0px 0px 0px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+
+
 .theSkillLabels {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0px;
     margin: 0px;
 }

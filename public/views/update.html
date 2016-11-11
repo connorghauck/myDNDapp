@@ -4,17 +4,23 @@
     <a href="/update">UPDATE</a>
 </nav>
 
+<div id="container">
+
+
 <h1>Update Character</h1>
 <hr />
 <div class="dice" rows="1">
-    <h2 id="diceResults">DICE</h2>
-    <button type="button" onclick="diceRoll()">Roll Dice</button>
+    <h4 id="diceResults">Dice Roll: 0</h4>
+    <h4 id="diceResultsMultiple">Stat Roll: 0</h4>
+    <button type="button" onclick="diceRoll()">Roll One Dice</button>
+    <button type="button" onclick="statRolls()">Roll Multiple (3)</button>
 </div>
+
 <form class="characterForm" ng-submit="update.sheet()">
 
-<div class="topOfScreen">
+<div id="topOfScreen" class="topOfScreen col-xs-12 col-md-12 noPadding">
     <div class="col-xs-4 col-md-4">
-        <textarea class="form-control" ng-model="update.selectedId.charname" readonly disabled="true" rows="3" placeholder="{{update.selectedId.charname}}"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.charname" readonly disabled="true" rows="1" placeholder="{{update.selectedId.charname}}"></textarea>
         <label for="characterName">Character Name</label>
     </div>
 
@@ -63,112 +69,117 @@
 
     <div id="attributes" class="col-xs-4 col-md-4 noPaddingL">
 
-        <textarea class="form-control" ng-model="update.selectedId.strength" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.strength" rows="1"></textarea>
         <label for="characterStr">Strength</label>
 
-        <textarea class="form-control" ng-model="update.selectedId.dexterity" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.dexterity" rows="1"></textarea>
         <label for="characterDex">Dexterity</label>
 
-        <textarea class="form-control" ng-model="update.selectedId.constitution" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.constitution" rows="1"></textarea>
         <label for="characterConst">Constitution</label>
 
-        <textarea class="form-control" ng-model="update.selectedId.intelligence" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.intelligence" rows="1"></textarea>
         <label for="characterInt">Intelligence</label>
 
-        <textarea class="form-control" ng-model="update.selectedId.wisdom" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.wisdom" rows="1"></textarea>
         <label for="characterWis">Wisdom</label>
 
-        <textarea class="form-control" ng-model="update.selectedId.charisma" rows="3"></textarea>
+        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.charisma" rows="1"></textarea>
         <label for="characterChar">Charisma</label>
+
+        <button type="button" ng-click="update.setSkillBonuses()" rows="3">Check Skill Bonuses</button>
+
 
     </div><!-- End of attributes section !-->
 
 
     <div class="col-xs-8 col-md-8 noPadding">
 
-        <textarea class="form-control" ng-model="update.selectedId.inspiration" rows="1"></textarea>
+        <input type="text" class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.inspiration" rows="1"/>
         <label for="characterInsp">Inspiration</label>
-
-        <textarea class="form-control" ng-model="update.selectedId.proficiency" rows="1"></textarea>
+<hr />
+        <input type="text" class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.proficiency" rows="1"/>
         <label for="characterProfBonus">Proficiency Bonus</label>
-
-        <textarea class="form-control" ng-model="update.selectedId.savingthrows" rows="5"></textarea>
+<hr />
+        <textarea class="form-control col-xs-12 col-md-12" ng-model="update.selectedId.savingthrows" rows="5"></textarea>
         <label for="characterSavingThrows">Saving Throws</label>
+<hr />
 
     <div class="col-xs-6 col-md-6 noPadding" id="skills">
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.acrobaticsskill"/>
+        <input type="text" id="charSkills1"class="form-control" ng-model="update.selectedId.acrobaticsskill"/>
         <label class="theSkillLabels" for="characterSkill">Acrobatics</label>
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.animalhandlingskill"/>
+        <input type="text" id="charSkills2"class="form-control" ng-model="update.selectedId.animalhandlingskill"/>
         <label class="theSkillLabels" for="characterSkill">Animal Handling</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.arcanaskill"/>
+        <input type="text" id="charSkills3"class="form-control" ng-model="update.selectedId.arcanaskill"/>
         <label class="theSkillLabels" for="characterSkill">Arcana</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.athleticsskill"/>
+        <input type="text" id="charSkills4"class="form-control" ng-model="update.selectedId.athleticsskill"/>
         <label class="theSkillLabels" for="characterSkill">Athletics</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.deceptionskill"/>
+        <input type="text" id="charSkills5"class="form-control" ng-model="update.selectedId.deceptionskill"/>
         <label class="theSkillLabels" for="characterSkill">Deception</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.historyskill"/>
+        <input type="text" id="charSkills6"class="form-control" ng-model="update.selectedId.historyskill"/>
         <label class="theSkillLabels" for="characterSkill">History</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.insightskill"/>
+        <input type="text" id="charSkills7"class="form-control" ng-model="update.selectedId.insightskill"/>
         <label class="theSkillLabels" for="characterSkill">Insight</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.intimidationskill"/>
+        <input type="text" id="charSkills8"class="form-control" ng-model="update.selectedId.intimidationskill"/>
         <label class="theSkillLabels" for="characterSkill">Intimidation</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.investigationskill"/>
+        <input type="text" id="charSkills9"class="form-control" ng-model="update.selectedId.investigationskill"/>
         <label class="theSkillLabels" for="characterSkill">Investigation</label>
 </div>
+
 <div class="col-xs-6 col-md-6 noPadding" id="skills">
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.medicineskill"/>
+        <input type="text" id="charSkills10"class="form-control" ng-model="update.selectedId.medicineskill"/>
         <label class="theSkillLabels" for="characterSkill">Medicine</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.natureskill"/>
+        <input type="text" id="charSkills11"class="form-control" ng-model="update.selectedId.natureskill"/>
         <label class="theSkillLabels" for="characterSkill">Nature</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.perceptionskill"/>
+        <input type="text" id="charSkills12"class="form-control" ng-model="update.selectedId.perceptionskill"/>
         <label class="theSkillLabels" for="characterSkill">Perception</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.performanceskill"/>
+        <input type="text" id="charSkills13"class="form-control" ng-model="update.selectedId.performanceskill"/>
         <label class="theSkillLabels" for="characterSkill">Performance</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.persuasionskill"/>
+        <input type="text" id="charSkills14"class="form-control" ng-model="update.selectedId.persuasionskill"/>
         <label class="theSkillLabels" for="characterSkill">Persuasion</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.religionskill"/>
+        <input type="text" id="charSkills15"class="form-control" ng-model="update.selectedId.religionskill"/>
         <label class="theSkillLabels" for="characterSkill">Religion</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.sleightofhandskill"/>
+        <input type="text" id="charSkills16"class="form-control" ng-model="update.selectedId.sleightofhandskill"/>
         <label class="theSkillLabels" for="characterSkill">Sleight of Hand</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.stealthskill"/>
+        <input type="text" id="charSkills17"class="form-control" ng-model="update.selectedId.stealthskill"/>
         <label class="theSkillLabels" for="characterSkill">Stealth</label>
 
 
-        <input type="text" id="charSkills"class="form-control" ng-model="update.selectedId.survivalskill"/>
+        <input type="text" id="charSkills18"class="form-control" ng-model="update.selectedId.survivalskill"/>
         <label class="theSkillLabels" for="characterSkill">Survival</label>
 
     </div>
-
+<hr />
 
 
     </div> <!-- end of skills !-->
@@ -181,7 +192,7 @@
     </div>
 
     <div class="col-xs-12 col-md-12 noPadding">
-        <textarea class="form-control" ng-model="update.selectedId.otherproficiencies" rows="10"></textarea>
+        <textarea class="form-control" ng-model="update.selectedId.otherproficiencies" rows="9"></textarea>
         <label for="characterLanguages">Other Proficiences and Languages</label>
     </div>
 </div> <!-- end of left column !-->
@@ -272,3 +283,4 @@
 </div>
 
 </form>
+</div>

@@ -6,6 +6,13 @@ function UpdateController($http, $location, CharacterService) {
 
     var ctrl = this;
 
+    ctrl.setSkillBonuses = function(){
+        if (ctrl.selectedId.strength > 10){
+            document.getElementById("charSkills1").innerHTML = "1";
+        } else {
+            console.log('didnt work idk');
+        };
+    }
 
     $http.get('/alignments').then(function(response){
         console.log('getting alignments', response);
