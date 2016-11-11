@@ -81,7 +81,6 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsAthletics = '12';
                 break;
         };
-        console.log('fuck ', ctrl.character.characterSkillsAthletics);
 
         switch (ctrl.character.characterInt){
             case '1':
