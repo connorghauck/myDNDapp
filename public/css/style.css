@@ -17,7 +17,7 @@ h2{
     padding: 0px;
 }
 
-#container {
+/*#container {
 
 }
 
@@ -27,15 +27,16 @@ h2{
 
 #theMiddle {
 
-}
+}*/
 
 #attributes {
     text-align-last: center;
 }
 
-#rightSide {
+/*#rightSide {
 
-}
+}*/
+
 #attributeText {
     font-size: 44px;
 }
@@ -44,14 +45,6 @@ hr {
     visibility: hidden;
     padding: 0px;
     margin: 5px;
-}
-
-#charSkills {
-    height: 20px;
-    margin: 2px 0px 0px 0px;
-    border: 1px solid black;
-    background-color: #EEEEEE;
-    text-align: center;
 }
 
 #charSkills {

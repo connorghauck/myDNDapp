@@ -69,7 +69,7 @@
 
     <div id="attributes" class="col-xs-4 col-md-4 noPaddingL">
 
-        <textarea class="form-control" id="attributeText" ng-model="update.selectedId.strength" rows="1"></textarea>
+        <input type="number" class="form-control" id="attributeText" ng-model="update.selectedId.strength" rows="1"/>
         <label for="characterStr">Strength</label>
 
         <textarea class="form-control" id="attributeText" ng-model="update.selectedId.dexterity" rows="1"></textarea>
@@ -105,7 +105,7 @@
         <label for="characterSavingThrows">Saving Throws</label>
 <hr />
 
-    <div class="col-xs-6 col-md-6 noPadding" id="skills">
+    <div class="col-xs-6 col-md-6 noPaddingL" id="skills">
         <input type="text" id="charSkills1"class="form-control" ng-model="update.selectedId.acrobaticsskill"/>
         <label class="theSkillLabels" for="characterSkill">Acrobatics</label>
 

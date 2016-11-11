@@ -100,7 +100,7 @@
 <hr />
 
     <div class="col-xs-6 col-md-6 noPadding" id="skills">
-        <input type="text" id="charSkills1"class="form-control" ng-model="sheet.character.characterSkillsAcrobatics"/>
+        <input type="text" id="charSkills1"class="form-control" ng-value="sheet.character.characterSkillsAcrobatics"/>
         <label class="theSkillLabels" for="characterSkill">Acrobatics (Dex)</label>
 
         <input type="text" id="charSkills2"class="form-control" ng-model="sheet.character.characterSkillsAnimalHandling"/>
@@ -235,8 +235,7 @@
 </div><!-- End of the large middle area. !-->
 
 <div id="rightSide" class="col-xs-4 col-md-4">
-
-    <div id="personalityAndInfo">
+        <div id="personalityAndInfo">
         <div>
             <textarea class="form-control" ng-model="sheet.character.characterPers" rows="3"></textarea>
             <label for="characterPers">Personality Traits</label>
