@@ -11,80 +11,107 @@ function SheetController($http, $location) {
         switch (ctrl.character.characterStr){
             case '1':
                 ctrl.character.characterSkillsAthletics = '-5';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='IndianRed';
                 break;
             case '2':
             case '3':
                 ctrl.character.characterSkillsAthletics = '-4';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#cf6363';
+
                 break;
             case '4':
             case '5':
                 ctrl.character.characterSkillsAthletics = '-3';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#db8a8a';
+
                 break;
             case '6':
             case '7':
                 ctrl.character.characterSkillsAthletics = '-2';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#e19d9d';
+
                 break;
             case '8':
             case '9':
                 ctrl.character.characterSkillsAthletics = '-1';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#edc4c4';
+
                 break;
             case '10':
             case '11':
                 ctrl.character.characterSkillsAthletics = '0';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#EEEEEE';
                 break;
             case '12':
             case '13':
-                ctrl.character.characterSkillsAthletics = '+1';
+                ctrl.character.characterSkillsAthletics = '1';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#80ffaa';
                 break;
             case '14':
             case '15':
-                ctrl.character.characterSkillsAthletics = '+2';
+                ctrl.character.characterSkillsAthletics = '2';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#1aff66';
                 break;
             case '16':
             case '17':
-                ctrl.character.characterSkillsAthletics = '+3';
+                ctrl.character.characterSkillsAthletics = '3';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00cc44';
                 break;
             case '18':
             case '19':
-                ctrl.character.characterSkillsAthletics = '+4';
+                ctrl.character.characterSkillsAthletics = '4';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#009933';
                 break;
             case '20':
             case '21':
-                ctrl.character.characterSkillsAthletics = '+5';
+                ctrl.character.characterSkillsAthletics = '5';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '22':
             case '23':
                 ctrl.character.characterSkillsAthletics = '6';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '24':
             case '25':
                 ctrl.character.characterSkillsAthletics = '7';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '26':
             case '27':
                 ctrl.character.characterSkillsAthletics = '8';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '28':
             case '29':
                 ctrl.character.characterSkillsAthletics = '9';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '30':
             case '31':
                 ctrl.character.characterSkillsAthletics = '10';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '32':
             case '33':
                 ctrl.character.characterSkillsAthletics = '11';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
             case '34':
             case '35':
                 ctrl.character.characterSkillsAthletics = '12';
+                document.getElementsByName('charSkillsStr')[0].style.backgroundColor='#00802b';
                 break;
         };
 
         switch (ctrl.character.characterInt){
             case '1':
                 ctrl.character.characterSkillsArcana = '-5';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='IndianRed';
                 ctrl.character.characterSkillsHistory = '-5';
                 ctrl.character.characterSkillsInvestigation = '-5';
                 ctrl.character.characterSkillsNature = '-5';
@@ -93,6 +120,11 @@ function SheetController($http, $location) {
             case '2':
             case '3':
                 ctrl.character.characterSkillsArcana = '-4';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#cf6363';
                 ctrl.character.characterSkillsHistory = '-4';
                 ctrl.character.characterSkillsInvestigation = '-4';
                 ctrl.character.characterSkillsNature = '-4';
@@ -102,6 +134,11 @@ function SheetController($http, $location) {
             case '4':
             case '5':
                 ctrl.character.characterSkillsArcana = '-3';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#db8a8a';
                 ctrl.character.characterSkillsHistory = '-3';
                 ctrl.character.characterSkillsInvestigation = '-3';
                 ctrl.character.characterSkillsNature = '-3';
@@ -111,6 +148,11 @@ function SheetController($http, $location) {
             case '6':
             case '7':
                 ctrl.character.characterSkillsArcana = '-2';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#e19d9d';
                 ctrl.character.characterSkillsHistory = '-2';
                 ctrl.character.characterSkillsInvestigation = '-2';
                 ctrl.character.characterSkillsNature = '-2';
@@ -120,6 +162,11 @@ function SheetController($http, $location) {
             case '8':
             case '9':
                 ctrl.character.characterSkillsArcana = '-1';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#edc4c4';
                 ctrl.character.characterSkillsHistory = '-1';
                 ctrl.character.characterSkillsInvestigation = '-1';
                 ctrl.character.characterSkillsNature = '-1';
@@ -129,6 +176,11 @@ function SheetController($http, $location) {
             case '10':
             case '11':
                 ctrl.character.characterSkillsArcana = '0';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#EEEEEE';
                 ctrl.character.characterSkillsHistory = '0';
                 ctrl.character.characterSkillsInvestigation = '0';
                 ctrl.character.characterSkillsNature = '0';
@@ -137,52 +189,82 @@ function SheetController($http, $location) {
                 break;
             case '12':
             case '13':
-                ctrl.character.characterSkillsArcana = '+1';
-                ctrl.character.characterSkillsHistory = '+1';
-                ctrl.character.characterSkillsInvestigation = '+1';
-                ctrl.character.characterSkillsNature = '+1';
-                ctrl.character.characterSkillsReligion = '+1';
+                ctrl.character.characterSkillsArcana = '1';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#80ffaa';
+                ctrl.character.characterSkillsHistory = '1';
+                ctrl.character.characterSkillsInvestigation = '1';
+                ctrl.character.characterSkillsNature = '1';
+                ctrl.character.characterSkillsReligion = '1';
 
                 break;
             case '14':
             case '15':
-                ctrl.character.characterSkillsArcana = '+2';
-                ctrl.character.characterSkillsHistory = '+2';
-                ctrl.character.characterSkillsInvestigation = '+2';
-                ctrl.character.characterSkillsNature = '+2';
-                ctrl.character.characterSkillsReligion = '+2';
+                ctrl.character.characterSkillsArcana = '2';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#1aff66';
+                ctrl.character.characterSkillsHistory = '2';
+                ctrl.character.characterSkillsInvestigation = '2';
+                ctrl.character.characterSkillsNature = '2';
+                ctrl.character.characterSkillsReligion = '2';
 
                 break;
             case '16':
             case '17':
-                ctrl.character.characterSkillsArcana = '+3';
-                ctrl.character.characterSkillsHistory = '+3';
-                ctrl.character.characterSkillsInvestigation = '+3';
-                ctrl.character.characterSkillsNature = '+3';
-                ctrl.character.characterSkillsReligion = '+3';
+                ctrl.character.characterSkillsArcana = '3';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00cc44';
+                ctrl.character.characterSkillsHistory = '3';
+                ctrl.character.characterSkillsInvestigation = '3';
+                ctrl.character.characterSkillsNature = '3';
+                ctrl.character.characterSkillsReligion = '3';
 
                 break;
             case '18':
             case '19':
-                ctrl.character.characterSkillsArcana = '+4';
-                ctrl.character.characterSkillsHistory = '+4';
-                ctrl.character.characterSkillsInvestigation = '+4';
-                ctrl.character.characterSkillsNature = '+4';
-                ctrl.character.characterSkillsReligion = '+4';
+                ctrl.character.characterSkillsArcana = '4';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#009933';
+                ctrl.character.characterSkillsHistory = '4';
+                ctrl.character.characterSkillsInvestigation = '4';
+                ctrl.character.characterSkillsNature = '4';
+                ctrl.character.characterSkillsReligion = '4';
 
                 break;
             case '20':
             case '21':
-                ctrl.character.characterSkillsArcana = '+5';
-                ctrl.character.characterSkillsHistory = '+5';
-                ctrl.character.characterSkillsInvestigation = '+5';
-                ctrl.character.characterSkillsNature = '+5';
-                ctrl.character.characterSkillsReligion = '+5';
+                ctrl.character.characterSkillsArcana = '5';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
+                ctrl.character.characterSkillsHistory = '5';
+                ctrl.character.characterSkillsInvestigation = '5';
+                ctrl.character.characterSkillsNature = '5';
+                ctrl.character.characterSkillsReligion = '5';
 
                 break;
             case '22':
             case '23':
                 ctrl.character.characterSkillsArcana = '6';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '6';
                 ctrl.character.characterSkillsInvestigation = '6';
                 ctrl.character.characterSkillsNature = '6';
@@ -192,6 +274,11 @@ function SheetController($http, $location) {
             case '24':
             case '25':
                 ctrl.character.characterSkillsArcana = '7';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '7';
                 ctrl.character.characterSkillsInvestigation = '7';
                 ctrl.character.characterSkillsNature = '7';
@@ -201,6 +288,11 @@ function SheetController($http, $location) {
             case '26':
             case '27':
                 ctrl.character.characterSkillsArcana = '8';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '8';
                 ctrl.character.characterSkillsNature = '8';
                 ctrl.character.characterSkillsReligion = '8';
@@ -209,6 +301,11 @@ function SheetController($http, $location) {
             case '28':
             case '29':
                 ctrl.character.characterSkillsArcana = '9';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '9';
                 ctrl.character.characterSkillsInvestigation = '9';
                 ctrl.character.characterSkillsNature = '9';
@@ -218,6 +315,11 @@ function SheetController($http, $location) {
             case '30':
             case '31':
                 ctrl.character.characterSkillsArcana = '10';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '10';
                 ctrl.character.characterSkillsInvestigation = '10';
                 ctrl.character.characterSkillsNature = '10';
@@ -227,6 +329,11 @@ function SheetController($http, $location) {
             case '32':
             case '33':
                 ctrl.character.characterSkillsArcana = '11';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '11';
                 ctrl.character.characterSkillsInvestigation = '11';
                 ctrl.character.characterSkillsNature = '11';
@@ -236,6 +343,11 @@ function SheetController($http, $location) {
             case '34':
             case '35':
                 ctrl.character.characterSkillsArcana = '12';
+                document.getElementsByName('charSkillsInt')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsInt')[4].style.backgroundColor='#00802b';
                 ctrl.character.characterSkillsHistory = '12';
                 ctrl.character.characterSkillsInvestigation = '12';
                 ctrl.character.characterSkillsNature = '12';
@@ -251,6 +363,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '-5';
                 ctrl.character.characterSkillsPerception = '-5';
                 ctrl.character.characterSkillsSurvival = '-5';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='IndianRed';
                 break;
             case '2':
             case '3':
@@ -259,7 +376,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '-4';
                 ctrl.character.characterSkillsPerception = '-4';
                 ctrl.character.characterSkillsSurvival = '-4';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#cf6363';
                 break;
             case '4':
             case '5':
@@ -268,7 +389,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '-3';
                 ctrl.character.characterSkillsPerception = '-3';
                 ctrl.character.characterSkillsSurvival = '-3';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#db8a8a';
                 break;
             case '6':
             case '7':
@@ -277,7 +402,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '-2';
                 ctrl.character.characterSkillsPerception = '-2';
                 ctrl.character.characterSkillsSurvival = '-2';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#e19d9d';
                 break;
             case '8':
             case '9':
@@ -286,7 +415,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '-1';
                 ctrl.character.characterSkillsPerception = '-1';
                 ctrl.character.characterSkillsSurvival = '-1';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#edc4c4';
                 break;
             case '10':
             case '11':
@@ -295,52 +428,76 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '0';
                 ctrl.character.characterSkillsPerception = '0';
                 ctrl.character.characterSkillsSurvival = '0';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#EEEEEE';
                 break;
             case '12':
             case '13':
-                ctrl.character.characterSkillsAnimalHandling = '+1';
-                ctrl.character.characterSkillsInsight = '+1';
-                ctrl.character.characterSkillsMedicine = '+1';
-                ctrl.character.characterSkillsPerception = '+1';
-                ctrl.character.characterSkillsSurvival = '+1';
-
+                ctrl.character.characterSkillsAnimalHandling = '1';
+                ctrl.character.characterSkillsInsight = '1';
+                ctrl.character.characterSkillsMedicine = '1';
+                ctrl.character.characterSkillsPerception = '1';
+                ctrl.character.characterSkillsSurvival = '1';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#80ffaa';
                 break;
             case '14':
             case '15':
-                ctrl.character.characterSkillsAnimalHandling = '+2';
-                ctrl.character.characterSkillsInsight = '+2';
-                ctrl.character.characterSkillsMedicine = '+2';
-                ctrl.character.characterSkillsPerception = '+2';
-                ctrl.character.characterSkillsSurvival = '+2';
-
+                ctrl.character.characterSkillsAnimalHandling = '2';
+                ctrl.character.characterSkillsInsight = '2';
+                ctrl.character.characterSkillsMedicine = '2';
+                ctrl.character.characterSkillsPerception = '2';
+                ctrl.character.characterSkillsSurvival = '2';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#1aff66';
                 break;
             case '16':
             case '17':
-                ctrl.character.characterSkillsAnimalHandling = '+3';
-                ctrl.character.characterSkillsInsight = '+3';
-                ctrl.character.characterSkillsMedicine = '+3';
-                ctrl.character.characterSkillsPerception = '+3';
-                ctrl.character.characterSkillsSurvival = '+3';
-
+                ctrl.character.characterSkillsAnimalHandling = '3';
+                ctrl.character.characterSkillsInsight = '3';
+                ctrl.character.characterSkillsMedicine = '3';
+                ctrl.character.characterSkillsPerception = '3';
+                ctrl.character.characterSkillsSurvival = '3';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00cc44';
                 break;
             case '18':
             case '19':
-                ctrl.character.characterSkillsAnimalHandling = '+4';
-                ctrl.character.characterSkillsInsight = '+4';
-                ctrl.character.characterSkillsMedicine = '+4';
-                ctrl.character.characterSkillsPerception = '+4';
-                ctrl.character.characterSkillsSurvival = '+4';
-
+                ctrl.character.characterSkillsAnimalHandling = '4';
+                ctrl.character.characterSkillsInsight = '4';
+                ctrl.character.characterSkillsMedicine = '4';
+                ctrl.character.characterSkillsPerception = '4';
+                ctrl.character.characterSkillsSurvival = '4';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#009933';
                 break;
             case '20':
             case '21':
-                ctrl.character.characterSkillsAnimalHandling = '+5';
-                ctrl.character.characterSkillsInsight = '+5';
-                ctrl.character.characterSkillsMedicine = '+5';
-                ctrl.character.characterSkillsPerception = '+5';
-                ctrl.character.characterSkillsSurvival = '+5';
-
+                ctrl.character.characterSkillsAnimalHandling = '5';
+                ctrl.character.characterSkillsInsight = '5';
+                ctrl.character.characterSkillsMedicine = '5';
+                ctrl.character.characterSkillsPerception = '5';
+                ctrl.character.characterSkillsSurvival = '5';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '22':
             case '23':
@@ -349,7 +506,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '6';
                 ctrl.character.characterSkillsPerception = '6';
                 ctrl.character.characterSkillsSurvival = '6';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '24':
             case '25':
@@ -358,7 +519,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '7';
                 ctrl.character.characterSkillsPerception = '7';
                 ctrl.character.characterSkillsSurvival = '7';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '26':
             case '27':
@@ -367,6 +532,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsPerception = '8';
                 ctrl.character.characterSkillsSurvival = '8';
                 ctrl.character.characterSkillsMedicine = '8';
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '28':
             case '29':
@@ -375,7 +545,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '9';
                 ctrl.character.characterSkillsPerception = '9';
                 ctrl.character.characterSkillsSurvival = '9';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '30':
             case '31':
@@ -384,7 +558,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '10';
                 ctrl.character.characterSkillsPerception = '10';
                 ctrl.character.characterSkillsSurvival = '10';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '32':
             case '33':
@@ -393,7 +571,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '11';
                 ctrl.character.characterSkillsPerception = '11';
                 ctrl.character.characterSkillsSurvival = '11';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
             case '34':
             case '35':
@@ -402,7 +584,11 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsMedicine = '12';
                 ctrl.character.characterSkillsPerception = '12';
                 ctrl.character.characterSkillsSurvival = '12';
-
+                document.getElementsByName('charSkillsWis')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[3].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsWis')[4].style.backgroundColor='#00802b';
                 break;
         };
 
@@ -411,108 +597,198 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsAcrobatics = '-5';
                 ctrl.character.characterSkillsSleightOfHand = '-5';
                 ctrl.character.characterSkillsStealth = '-5';
+                ctrl.character.characterInit = '-5';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='IndianRed';
                 break;
             case '2':
             case '3':
                 ctrl.character.characterSkillsAcrobatics = '-4';
                 ctrl.character.characterSkillsSleightOfHand = '-4';
                 ctrl.character.characterSkillsStealth = '-4';
+                ctrl.character.characterInit = '-4';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#cf6363';
                 break;
             case '4':
             case '5':
                 ctrl.character.characterSkillsAcrobatics = '-3';
                 ctrl.character.characterSkillsSleightOfHand = '-3';
                 ctrl.character.characterSkillsStealth = '-3';
+                ctrl.character.characterInit = '-3';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#db8a8a';
                 break;
             case '6':
             case '7':
                 ctrl.character.characterSkillsAcrobatics = '-2';
                 ctrl.character.characterSkillsSleightOfHand = '-2';
                 ctrl.character.characterSkillsStealth = '-2';
+                ctrl.character.characterInit = '-2';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#e19d9d';
                 break;
             case '8':
             case '9':
                 ctrl.character.characterSkillsAcrobatics = '-1';
                 ctrl.character.characterSkillsSleightOfHand = '-1';
                 ctrl.character.characterSkillsStealth = '-1';
+                ctrl.character.characterInit = '-1';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#edc4c4';
                 break;
             case '10':
             case '11':
                 ctrl.character.characterSkillsAcrobatics = '0';
                 ctrl.character.characterSkillsSleightOfHand = '0';
                 ctrl.character.characterSkillsStealth = '0';
+                ctrl.character.characterInit = '0';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#EEEEEE';
                 break;
             case '12':
             case '13':
-                ctrl.character.characterSkillsAcrobatics = '+1';
-                ctrl.character.characterSkillsSleightOfHand = '+1';
-                ctrl.character.characterSkillsStealth = '+1';
+                ctrl.character.characterSkillsAcrobatics = '1';
+                ctrl.character.characterSkillsSleightOfHand = '1';
+                ctrl.character.characterSkillsStealth = '1';
+                ctrl.character.characterInit = '1';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#80ffaa';
                 break;
             case '14':
             case '15':
-                ctrl.character.characterSkillsAcrobatics = '+2';
-                ctrl.character.characterSkillsSleightOfHand = '+2';
-                ctrl.character.characterSkillsStealth = '+2';
+                ctrl.character.characterSkillsAcrobatics = '2';
+                ctrl.character.characterSkillsSleightOfHand = '2';
+                ctrl.character.characterSkillsStealth = '2';
+                ctrl.character.characterInit = '2';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#1aff66';
                 break;
             case '16':
             case '17':
-                ctrl.character.characterSkillsAcrobatics = '+3';
-                ctrl.character.characterSkillsSleightOfHand = '+3';
-                ctrl.character.characterSkillsStealth = '+3';
+                ctrl.character.characterSkillsAcrobatics = '3';
+                ctrl.character.characterSkillsSleightOfHand = '3';
+                ctrl.character.characterSkillsStealth = '3';
+                ctrl.character.characterInit = '3';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00cc44';
                 break;
             case '18':
             case '19':
-                ctrl.character.characterSkillsAcrobatics = '+4';
-                ctrl.character.characterSkillsSleightOfHand = '+4';
-                ctrl.character.characterSkillsStealth = '+4';
+                ctrl.character.characterSkillsAcrobatics = '4';
+                ctrl.character.characterSkillsSleightOfHand = '4';
+                ctrl.character.characterSkillsStealth = '4';
+                ctrl.character.characterInit = '4';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#009933';
                 break;
             case '20':
             case '21':
-                ctrl.character.characterSkillsAcrobatics = '+5';
-                ctrl.character.characterSkillsSleightOfHand = '+5';
-                ctrl.character.characterSkillsStealth = '+5';
+                ctrl.character.characterSkillsAcrobatics = '5';
+                ctrl.character.characterSkillsSleightOfHand = '5';
+                ctrl.character.characterSkillsStealth = '5';
+                ctrl.character.characterInit = '5';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '22':
             case '23':
                 ctrl.character.characterSkillsAcrobatics = '6';
                 ctrl.character.characterSkillsSleightOfHand = '6';
                 ctrl.character.characterSkillsStealth = '6';
+                ctrl.character.characterInit = '6';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '24':
             case '25':
                 ctrl.character.characterSkillsAcrobatics = '7';
                 ctrl.character.characterSkillsSleightOfHand = '7';
                 ctrl.character.characterSkillsStealth = '7';
+                ctrl.character.characterInit = '7';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '26':
             case '27':
                 ctrl.character.characterSkillsAcrobatics = '8';
                 ctrl.character.characterSkillsSleightOfHand = '8';
                 ctrl.character.characterSkillsStealth = '8';
+                ctrl.character.characterInit = '8';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '28':
             case '29':
                 ctrl.character.characterSkillsAcrobatics = '9';
                 ctrl.character.characterSkillsSleightOfHand = '9';
                 ctrl.character.characterSkillsStealth = '9';
+                ctrl.character.characterInit = '9';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '30':
             case '31':
                 ctrl.character.characterSkillsAcrobatics = '10';
                 ctrl.character.characterSkillsSleightOfHand = '10';
                 ctrl.character.characterSkillsStealth = '10';
+                ctrl.character.characterInit = '10';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '32':
             case '33':
                 ctrl.character.characterSkillsAcrobatics = '11';
                 ctrl.character.characterSkillsSleightOfHand = '11';
                 ctrl.character.characterSkillsStealth = '11';
+                ctrl.character.characterInit = '11';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
             case '34':
             case '35':
                 ctrl.character.characterSkillsAcrobatics = '12';
                 ctrl.character.characterSkillsSleightOfHand = '12';
                 ctrl.character.characterSkillsStealth = '12';
+                ctrl.character.characterInit = '12';
+                document.getElementsByName('charSkillsDex')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsDex')[3].style.backgroundColor='#00802b';
                 break;
         };
 
@@ -522,6 +798,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '-5';
                 ctrl.character.characterSkillsPerformance = '-5';
                 ctrl.character.characterSkillsPersuasion = '-5';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='IndianRed';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='IndianRed';
                 break;
             case '2':
             case '3':
@@ -529,6 +809,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '-4';
                 ctrl.character.characterSkillsPerformance = '-4';
                 ctrl.character.characterSkillsPersuasion = '-4';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#cf6363';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#cf6363';
                 break;
             case '4':
             case '5':
@@ -536,6 +820,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '-3';
                 ctrl.character.characterSkillsPerformance = '-3';
                 ctrl.character.characterSkillsPersuasion = '-3';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#db8a8a';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#db8a8a';
                 break;
             case '6':
             case '7':
@@ -543,6 +831,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '-2';
                 ctrl.character.characterSkillsPerformance = '-2';
                 ctrl.character.characterSkillsPersuasion = '-2';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#e19d9d';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#e19d9d';
                 break;
             case '8':
             case '9':
@@ -550,6 +842,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '-1';
                 ctrl.character.characterSkillsPerformance = '-1';
                 ctrl.character.characterSkillsPersuasion = '-1';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#edc4c4';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#edc4c4';
                 break;
             case '10':
             case '11':
@@ -557,41 +853,65 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '0';
                 ctrl.character.characterSkillsPerformance = '0';
                 ctrl.character.characterSkillsPersuasion = '0';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#EEEEEE';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#EEEEEE';
                 break;
             case '12':
             case '13':
-                ctrl.character.characterSkillsDeception = '+1';
-                ctrl.character.characterSkillsIntimidation = '+1';
-                ctrl.character.characterSkillsPerformance = '+1';
-                ctrl.character.characterSkillsPersuasion = '+1';
+                ctrl.character.characterSkillsDeception = '1';
+                ctrl.character.characterSkillsIntimidation = '1';
+                ctrl.character.characterSkillsPerformance = '1';
+                ctrl.character.characterSkillsPersuasion = '1';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#80ffaa';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#80ffaa';
                 break;
             case '14':
             case '15':
-                ctrl.character.characterSkillsDeception = '+2';
-                ctrl.character.characterSkillsIntimidation = '+2';
-                ctrl.character.characterSkillsPerformance = '+2';
-                ctrl.character.characterSkillsPersuasion = '+2';
+                ctrl.character.characterSkillsDeception = '2';
+                ctrl.character.characterSkillsIntimidation = '2';
+                ctrl.character.characterSkillsPerformance = '2';
+                ctrl.character.characterSkillsPersuasion = '2';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#1aff66';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#1aff66';
                 break;
             case '16':
             case '17':
-                ctrl.character.characterSkillsDeception = '+3';
-                ctrl.character.characterSkillsIntimidation = '+3';
-                ctrl.character.characterSkillsPerformance = '+3';
-                ctrl.character.characterSkillsPersuasion = '+3';
+                ctrl.character.characterSkillsDeception = '3';
+                ctrl.character.characterSkillsIntimidation = '3';
+                ctrl.character.characterSkillsPerformance = '3';
+                ctrl.character.characterSkillsPersuasion = '3';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00cc44';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00cc44';
                 break;
             case '18':
             case '19':
-                ctrl.character.characterSkillsDeception = '+4';
-                ctrl.character.characterSkillsIntimidation = '+4';
-                ctrl.character.characterSkillsPerformance = '+4';
-                ctrl.character.characterSkillsPersuasion = '+4';
+                ctrl.character.characterSkillsDeception = '4';
+                ctrl.character.characterSkillsIntimidation = '4';
+                ctrl.character.characterSkillsPerformance = '4';
+                ctrl.character.characterSkillsPersuasion = '4';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#009933';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#009933';
                 break;
             case '20':
             case '21':
-                ctrl.character.characterSkillsDeception = '+5';
-                ctrl.character.characterSkillsIntimidation = '+5';
-                ctrl.character.characterSkillsPerformance = '+5';
-                ctrl.character.characterSkillsPersuasion = '+5';
+                ctrl.character.characterSkillsDeception = '5';
+                ctrl.character.characterSkillsIntimidation = '5';
+                ctrl.character.characterSkillsPerformance = '5';
+                ctrl.character.characterSkillsPersuasion = '5';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '22':
             case '23':
@@ -599,6 +919,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '6';
                 ctrl.character.characterSkillsPerformance = '6';
                 ctrl.character.characterSkillsPersuasion = '6';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '24':
             case '25':
@@ -606,6 +930,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '7';
                 ctrl.character.characterSkillsPerformance = '7';
                 ctrl.character.characterSkillsPersuasion = '7';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '26':
             case '27':
@@ -613,6 +941,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '8';
                 ctrl.character.characterSkillsPerformance = '8';
                 ctrl.character.characterSkillsPersuasion = '8';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '28':
             case '29':
@@ -620,6 +952,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '9';
                 ctrl.character.characterSkillsPerformance = '9';
                 ctrl.character.characterSkillsPersuasion = '9';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '30':
             case '31':
@@ -627,6 +963,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '10';
                 ctrl.character.characterSkillsPerformance = '10';
                 ctrl.character.characterSkillsPersuasion = '10';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '32':
             case '33':
@@ -634,6 +974,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '11';
                 ctrl.character.characterSkillsPerformance = '11';
                 ctrl.character.characterSkillsPersuasion = '11';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
             case '34':
             case '35':
@@ -641,6 +985,10 @@ function SheetController($http, $location) {
                 ctrl.character.characterSkillsIntimidation = '12';
                 ctrl.character.characterSkillsPerformance = '12';
                 ctrl.character.characterSkillsPersuasion = '12';
+                document.getElementsByName('charSkillsChar')[0].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[1].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[2].style.backgroundColor='#00802b';
+                document.getElementsByName('charSkillsChar')[3].style.backgroundColor='#00802b';
                 break;
         };
 

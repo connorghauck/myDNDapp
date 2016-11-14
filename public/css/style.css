@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    font-size: 30px;
 }
 h2{
     text-align: center;
@@ -17,28 +18,34 @@ h2{
     padding: 0px;
 }
 
-/*#container {
-
+#navigation {
+    color: black;
+    font-size: 24px;
+    background-color: #EEEEEE;
 }
 
-#topOfScreen {
-
+#navigation a {
+    margin: 5px;
 }
 
-#theMiddle {
-
-}*/
+.container {
+    margin: 10px 0px 0px 0px;
+}
 
 #attributes {
     text-align-last: center;
 }
-
+#hpAndArmor {
+    text-align-last: center;
+}
 /*#rightSide {
 
 }*/
 
 #attributeText {
     font-size: 44px;
+    background-color: #EEEEEE;
+    color: black;
 }
 hr {
     clear: both;
@@ -55,12 +62,13 @@ hr {
     text-align: center;
 }
 
-#charSkills1, #charSkills2, #charSkills3, #charSkills4, #charSkills5, #charSkills6, #charSkills7, #charSkills8, #charSkills9, #charSkills10, #charSkills11, #charSkills12, #charSkills13, #charSkills14, #charSkills15, #charSkills16, #charSkills17, #charSkills18 {
+#charSkillsStr, #charSkillsDex, #charSkillsInt, #charSkillsWis, #charSkillsChar {
     height: 20px;
     margin: 2px 0px 0px 0px;
     border: 1px solid black;
     background-color: #EEEEEE;
     text-align: center;
+    color: black;
 }
 
 
