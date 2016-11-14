@@ -29,7 +29,7 @@ h2{
 }
 
 .container {
-    margin: 10px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
 }
 
 #attributes {
@@ -38,15 +38,19 @@ h2{
 #hpAndArmor {
     text-align-last: center;
 }
-/*#rightSide {
 
-}*/
 
 #attributeText {
     font-size: 44px;
     background-color: #EEEEEE;
     color: black;
 }
+
+#attributeNoText{
+    background-color: #EEEEEE;
+    color: black;
+}
+
 hr {
     clear: both;
     visibility: hidden;
