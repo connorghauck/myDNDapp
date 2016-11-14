@@ -45,3 +45,9 @@ Since last readme update, I have created a functioning select and update page/fe
 I had originally planned to have this project be half online, half offline. The Character Sheet was going to be a helper for our character sheets we typically have printed off from other PDFs and this would just add them to a database for us to fetch from at future points. However, the more I'm working with it, the more functionality I want to add to make it a almost completely online project.
 
 A random number generator has been added to simulate a 6 sided dice roll. I plan on next adding modifiers to skills based on attributes.
+
+Large update:
+
+Functionality is complete for nearly everything. The skill modifiers work perfectly and will add colors to the areas when they are updated by changing the style of the css based on the number of the skill modifier. The 1000 line switch has been reduced to ~110 lines and looks a lot more clean.
+
+I'll be adding in saving throws and other race/class based bonuses later, to fully create the DND 5e Character Creation experience virtually.

@@ -135,4 +135,6 @@ console.log('WHAT THE FUCJ', ctrl.selectedId);
             console.log('error workin', error);
         });
     };
+
+    ctrl.setSkillBonuses();
 }
