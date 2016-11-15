@@ -105,8 +105,7 @@ function SheetController($http, $location) {
         colorTheCharisma(getBGColor(ctrl.character.characterChar));
         colorTheDexterity(getBGColor(ctrl.character.characterDex));
         colorTheIntelligence(getBGColor(ctrl.character.characterInt));
-
-}
+    }
 
     $http.get('/alignments').then(function(response){
         console.log('getting alignments', response);
@@ -133,6 +132,4 @@ function SheetController($http, $location) {
             console.log('error workin', error);
         });
     };
-
-    
 }
